@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <rect x="8" y="8" width="84" height="84" rx="18" fill="#08141e" stroke="#00f090" stroke-width="3"/>
+  <circle cx="50" cy="50" r="26" stroke="#00f090" stroke-width="2" stroke-dasharray="5 3"/>
+  <circle cx="50" cy="50" r="14" fill="#00f090" fill-opacity="0.2" stroke="#00f090" stroke-width="2"/>
+  <circle cx="50" cy="50" r="5" fill="#00f090"/>
+  <!-- V2X radar beam -->
+  <line x1="50" y1="50" x2="72" y2="30" stroke="#00f090" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

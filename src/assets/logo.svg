@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <defs>
+    <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f090" />
+      <stop offset="50%" stop-color="#00d2ff" />
+      <stop offset="100%" stop-color="#ff2a44" />
+    </linearGradient>
+    <linearGradient id="neonEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f090" />
+      <stop offset="100%" stop-color="#00a86b" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Outer Hexagon / Target Reticle -->
+  <polygon points="100,10 178,55 178,145 100,190 22,145 22,55" 
+           stroke="url(#cyberGrad)" stroke-width="4" fill="#080d1a" fill-opacity="0.85" filter="url(#glow)"/>
+  
+  <!-- Subtle inner reticle accents -->
+  <circle cx="100" cy="100" r="75" stroke="#00d2ff" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.4"/>
+  <circle cx="100" cy="100" r="82" stroke="#00f090" stroke-width="1" stroke-dasharray="3 15" opacity="0.6"/>
+
+  <!-- Corner tick marks -->
+  <line x1="100" y1="18" x2="100" y2="30" stroke="#00f090" stroke-width="2.5" />
+  <line x1="100" y1="170" x2="100" y2="182" stroke="#ff2a44" stroke-width="2.5" />
+  <line x1="30" y1="100" x2="42" y2="100" stroke="#00d2ff" stroke-width="2.5" />
+  <line x1="158" y1="100" x2="170" y2="100" stroke="#00d2ff" stroke-width="2.5" />
+
+  <!-- Monogram VE -->
+  <!-- V Shape -->
+  <path d="M54 62 L85 138 L100 138 L72 62 Z" fill="#00f090" />
+  
+  <!-- E Shape connected stylistically -->
+  <path d="M96 62 L150 62 L150 78 L114 78 L114 92 L142 92 L142 108 L114 108 L114 122 L152 122 L152 138 L96 138 Z" fill="#00d2ff" />
+
+  <!-- Core target dot -->
+  <circle cx="100" cy="100" r="3.5" fill="#ff2a44" />
+</svg>

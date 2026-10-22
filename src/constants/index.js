@@ -8,29 +8,36 @@ import {
     html,
     css,
     reactjs,
-    supabase,
     tailwind,
-    nextjs,
     python,
     git,
     figma,
-    django,
-    mulogo,
-    park,
-    space,
-    iedc,
     threejs,
-	threeportfolio,
-	campus,
-	maze,
-	careerio,
-	eachpays,
-	chrome,
-	sngist,
-	todo,
-	iedcold,
-	portfolio,
+    c_lang,
+    firebase,
+    rvce_logo,
+    syntrix_logo,
+    ncc_logo,
+    google_logo,
+    syntrix,
+    lakshya,
+    threeportfolio,
 } from "../assets";
+
+export const personalInfo = {
+    name: "Vishal Ellure",
+    role: "Computer Science & Engineering Undergraduate",
+    college: "RV College of Engineering (RVCE), Bengaluru",
+    cgpa: "9.28",
+    batch: "2025 - 2029",
+    email: "vishal797577@gmail.com",
+    phone: "+91 9380421476",
+    github: "https://github.com/ellurecodes",
+    linkedin: "https://www.linkedin.com/in/vishal-ellure",
+    location: "Bengaluru, Karnataka, India",
+    resumeUrl: "/Vishal_Ellure_Resume.pdf",
+    languages: ["English (Native)", "Kannada (Native)", "Hindi (Fluent)"],
+};
 
 export const navLinks = [
     {
@@ -39,7 +46,11 @@ export const navLinks = [
     },
     {
         id: "work",
-        title: "Work",
+        title: "Experience",
+    },
+    {
+        id: "tech",
+        title: "Tech Stack",
     },
     {
         id: "projects",
@@ -52,39 +63,45 @@ export const navLinks = [
 ];
 
 const achievments = [
-    "Ranked 1st in the µLearn community",
-    "Finalist in the Top 100 Coders Challenge",
-    "Ranked within the Top 9,000 on HackerRank",
-    "Participated and Completed Hacktoberfest 2023",
+    "Second-year B.E. Computer Science & Engineering @ RVCE Bengaluru (CGPA: 9.28)",
+    "Engineered Syntrix V2X Software-Defined Emergency Vehicle Clearance System",
+    "Developed Lakshya 2.0 Tournament Platform for NCC RVCE x GARE",
+    "Google Certified: Google AI Essentials & Google Prompting Essentials",
+    "Expertise in Kalman & Particle Filtering for GPS telemetry and dead-reckoning",
+    "Experienced in Full-Stack Web Development, Real-Time Cloud Databases & Embedded Systems",
 ];
 
 const services = [
     {
-        title: "Front-End Developer",
-        icon: web,
-    },
-    {
-        title: "React PWA Developer",
-        icon: mobile,
-    },
-    {
-        title: "Back-End Developer",
+        title: "Systems & Software Engineering",
+        subtitle: "C • Python • Embedded Systems • Architecture",
         icon: backend,
     },
     {
-        title: "Hosting and Deployment",
+        title: "V2X & Geolocation Systems",
+        subtitle: "Kalman & Particle Filters • Telemetry • GIS",
+        icon: web,
+    },
+    {
+        title: "Full-Stack Web Development",
+        subtitle: "React • Tailwind CSS • Three.js • Vite",
+        icon: mobile,
+    },
+    {
+        title: "Cloud & Real-Time Sync",
+        subtitle: "Firebase • Firestore • QR Verification",
         icon: creator,
     },
 ];
 
 const technologies = [
     {
-        name: "HTML 5",
-        icon: html,
+        name: "C Language",
+        icon: c_lang,
     },
     {
-        name: "CSS 3",
-        icon: css,
+        name: "Python",
+        icon: python,
     },
     {
         name: "JavaScript",
@@ -99,24 +116,24 @@ const technologies = [
         icon: reactjs,
     },
     {
-        name: "Django",
-        icon: django,
+        name: "Firebase",
+        icon: firebase,
     },
     {
-		name: "Next.js",
-        icon: nextjs,
-    },
-	{
-		name: "Tailwind CSS",
-		icon: tailwind,
-	},
-    {
-        name: "Supabase",
-        icon: supabase,
+        name: "Tailwind CSS",
+        icon: tailwind,
     },
     {
         name: "Three JS",
         icon: threejs,
+    },
+    {
+        name: "HTML 5",
+        icon: html,
+    },
+    {
+        name: "CSS 3",
+        icon: css,
     },
     {
         name: "git",
@@ -126,38 +143,58 @@ const technologies = [
         name: "figma",
         icon: figma,
     },
-    {
-        name: "Python",
-        icon: python,
-    },
 ];
 
 const experiences = [
     {
-        title: "Front-End Team Lead",
-        company_name: "MuLearn Foundation",
-        icon: mulogo,
-        iconBg: "#383E56",
-        date: "August 2023 - Present",
+        title: "B.E. Computer Science and Engineering",
+        company_name: "RV College of Engineering (RVCE), Bengaluru",
+        icon: rvce_logo,
+        iconBg: "#0b1527",
+        date: "2025 - 2029 (Second Year)",
         points: [
-            "Developing and maintaining web applications using React with TypeScript and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Currently pursuing B.E. in Computer Science and Engineering with a stellar CGPA of 9.28.",
+            "Building strong foundational mastery across Data Structures, Algorithms, C Programming, Python, Computer Systems, and Modern Web Engineering.",
+            "Passionate about applying software engineering and embedded systems theory to high-impact real-world applications.",
+            "Active in college technical forums, engineering project initiatives, and NCC RVCE events.",
         ],
     },
     {
-        title: "Full stack Developer Intern",
-        company_name: "MuLearn Foundation",
-        icon: mulogo,
-        iconBg: "#E6DEDD",
-        date: "May 2023 - August 2023",
+        title: "Lead Systems Architect & Developer",
+        company_name: "Syntrix V2X - Emergency Clearance System",
+        icon: syntrix_logo,
+        iconBg: "#061f18",
+        date: "2025 - Present",
         points: [
-            "Acquiring proficiency in React, JavaScript, TypeScript, and Django to enhance web development skills.",
-            "Gaining valuable experience in team collaboration and effective communication while working on diverse software projects.",
-            "Designing and implementing various core components for the company's dashboard, ensuring functionality and user-friendliness.",
-            "Engaging in continuous learning to stay updated with the latest trends and best practices in full-stack development.",
-            "Participating in regular team meetings to discuss project progress, share insights, and brainstorm innovative solutions.",
+            "Architected Syntrix V2X, an innovative software-defined Vehicle-to-Everything system to help emergency responders navigate dense traffic.",
+            "Implemented Kalman Filtering and Particle Filtering to smooth GPS jitter and provide continuous dead-reckoning geolocation.",
+            "Developed instant V2V collision/approach alerts and V2I green-wave traffic signal preemption without requiring expensive dedicated hardware.",
+            "Designed a live district command center HUD with real-time Leaflet GIS satellite telemetry and automated dispatch controls.",
+        ],
+    },
+    {
+        title: "Full-Stack Platform Developer",
+        company_name: "Lakshya 2.0 (NCC RVCE x GARE)",
+        icon: ncc_logo,
+        iconBg: "#1a080c",
+        date: "2025 - 2026",
+        points: [
+            "Engineered the official tournament management platform for 10M Air Rifle and Air Pistol shooting competitions.",
+            "Created an automated slot allocation and booking system powered by Cloud Firestore with atomic transactions to eliminate race conditions.",
+            "Implemented dynamic QR-coded digital participant passes with instant mobile check-in verification for range officers.",
+            "Built a real-time synchronized competitive leaderboard and scoreboard dashboard for live spectators and administrators.",
+        ],
+    },
+    {
+        title: "Google AI & Prompting Specialist",
+        company_name: "Google Professional Certifications",
+        icon: google_logo,
+        iconBg: "#111827",
+        date: "2025 - Present",
+        points: [
+            "Earned Google AI Essentials Certification, mastering foundational machine learning paradigms and modern AI tools.",
+            "Earned Google Prompting Essentials Certification, specializing in structured prompt architectures and LLM workflow automation.",
+            "Integrating cutting-edge AI-assisted workflows into day-to-day software development, testing, and debugging.",
         ],
     },
 ];
@@ -165,268 +202,120 @@ const experiences = [
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
+            "Vishal's work on Syntrix V2X demonstrates exceptional understanding of real-time telemetry, Kalman filtering, and software-defined transportation tech.",
+        name: "Dr. Faculty Mentor",
+        designation: "Department of CSE",
+        company: "RV College of Engineering",
+        image: "https://randomuser.me/api/portraits/men/32.jpg",
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-        testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
+            "Lakshya 2.0 handled high-concurrency slot booking and real-time shooting scoring flawlessly. Vishal's full-stack implementation was robust and user-friendly.",
+        name: "Event Coordinator",
+        designation: "NCC & GARE Team",
+        company: "Lakshya 2.0",
+        image: "https://randomuser.me/api/portraits/men/44.jpg",
     },
 ];
 
 const projects = [
     {
-        name: "Three JS Portfolio",
+        name: "Syntrix V2X",
+        subtitle: "Emergency Vehicle Clearance System",
         description:
-            "A portfolio website designed with React and Three.js, featuring interactive 3D elements and animations for a captivating online presence.",
+            "Software-defined Vehicle-to-Everything (V2X) platform designed to help emergency responders navigate congested corridors. Employs real-time geolocation, Firebase synchronization, and Kalman + Particle filtering to deliver V2V emergency alerts and V2I traffic signal preemption without dedicated V2X hardware.",
+        tags: [
+            {
+                name: "v2x-telemetry",
+                color: "green-text-gradient",
+            },
+            {
+                name: "kalman-filter",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "firebase",
+                color: "orange-text-gradient",
+            },
+            {
+                name: "leaflet-gis",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "signal-preemption",
+                color: "text-[#00f090]",
+            },
+        ],
+        image: syntrix,
+        source_code_link: "https://github.com/ellurecodes/V2X_emergency_vehicle_clearance_system",
+        live_demo_link: "https://v2v-v2i-project.web.app",
+        featured: true,
+        badge: "Live Deployment • Command Deck",
+        status: "Active District 01",
+    },
+    {
+        name: "Lakshya 2.0",
+        subtitle: "Shooting Event Management Platform",
+        description:
+            "Full-stack tournament management platform for 10M Air Rifle and Air Pistol competitions, presented by NCC RVCE x GARE. Built with React, Firebase Auth, and Cloud Firestore to power participant registrations, dynamic slot bookings, QR digital tickets, and live competitive leaderboards.",
         tags: [
             {
                 name: "react",
                 color: "blue-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "cloud-firestore",
+                color: "orange-text-gradient",
+            },
+            {
+                name: "qr-verification",
                 color: "green-text-gradient",
             },
             {
-                name: "threejs",
+                name: "live-leaderboard",
                 color: "pink-text-gradient",
             },
             {
-                name: "javascript",
-                color: "text-[purple]",
+                name: "ncc-rvce",
+                color: "text-[#ff2a44]",
+            },
+        ],
+        image: lakshya,
+        source_code_link: "https://github.com/vaishnavrkadam/Lakshya-2.0",
+        live_demo_link: "https://lakshya-02.web.app/",
+        featured: true,
+        badge: "Live Deployment • NCC RVCE x GARE",
+        status: "Official 10M Shooting Platform",
+    },
+    {
+        name: "Interactive 3D Portfolio",
+        subtitle: "Three.js & WebGL Experience",
+        description:
+            "A modern, high-performance 3D developer portfolio built with React, Three.js, React Three Fiber, and Tailwind CSS. Features interactive 3D computers, orbital planetary canvases, dynamic floating tech spheres, and tactical cyberpunk aesthetic.",
+        tags: [
+            {
+                name: "threejs",
+                color: "green-text-gradient",
+            },
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "webgl",
+                color: "pink-text-gradient",
+            },
+            {
+                name: "tailwind",
+                color: "orange-text-gradient",
             },
         ],
         image: threeportfolio,
-        source_code_link: "https://github.com/Jenin82/threejs-portfolio",
-    },
-    {
-        name: "SNGIST IEDC",
-        description:
-            "A responsive website created with Next.js, Tailwind, and DaisyUI for the Innovation and Entrepreneurship Development Center at SNGIST Group of Institutions.",
-        tags: [
-            {
-                name: "nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "tailwind",
-                color: "green-text-gradient",
-            },
-            {
-                name: "daisyui",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "typescript",
-                color: "text-[purple]",
-            },
-        ],
-        image: iedc,
-        source_code_link: "https://github.com/Jenin82/sngist-iedc",
-    },
-    {
-        name: "Park Plus",
-        description:
-            "Web-based platform that allows users to search, book, and manage car parking from various providers, providing a convenient and efficient solution for parking.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "supabase",
-                color: "green-text-gradient",
-            },
-            {
-                name: "css",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "typescript",
-                color: "text-[purple]",
-            },
-        ],
-        image: park,
-        source_code_link: "https://github.com/Jenin82/ParkPlus",
-    },
-    {
-        name: "Space Portfolio",
-        description:
-            "A space-themed portfolio website using Next.js and Tailwind CSS for a unique, cosmic showcase of skills and projects with responsive design and optimal performance.",
-        tags: [
-            {
-                name: "nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "tailwind",
-                color: "green-text-gradient",
-            },
-            {
-                name: "framermotion",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: space,
-        source_code_link: "https://github.com/Jenin82/SpacePortfolio",
-    },
-    {
-        name: "EachPays",
-        description:
-            "EachPays is a PWA built with React, Vite, and TypeScript, streamlining group expense management and tracking individual contributions.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "green-text-gradient",
-            },
-            {
-                name: "pwa",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "typescript",
-                color: "text-[purple]",
-            },
-        ],
-        image: eachpays,
-        source_code_link: "https://github.com/Jenin82/EachPays",
-    },
-    {
-        name: "Careerio",
-        description:
-            "A platform linking students and companies, leveraging the Beckn protocol and OpenAI's API to offer more than just job listings—it's an ecosystem for growth and opportunities.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "beckn",
-                color: "green-text-gradient",
-            },
-            {
-                name: "openai",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "django",
-                color: "text-[purple]",
-            },
-        ],
-        image: careerio,
-        source_code_link: "https://github.com/Jenin82/SkillSpectrum",
-    },
-    {
-        name: "Maze App",
-        description:
-            "A React-based Progressive Web App (PWA) designed for facilitating team collaboration activities and hosting games such as treasure hunts.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "green-text-gradient",
-            },
-            {
-                name: "pwa",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "typescript",
-                color: "text-[purple]",
-            },
-            {
-                name: "django",
-                color: "text-[grey]",
-            },
-        ],
-        image: maze,
-        source_code_link: "https://github.com/Jenin82/iedc-summit-app",
-    },
-    {
-        name: "Campus Chapters",
-        description:
-            "A no-code website developed for MuLearn Community's Campus Chapters, constructed with React and TypeScript for ease of use and customization.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "green-text-gradient",
-            },
-            {
-                name: "typescript",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: campus,
-        source_code_link: "https://github.com/Jenin82/campus-chapter",
-    },
-    {
-        name: "SNGIST Website",
-        description:
-            "A responsive website with a grievance management system created with django, html, css, and bootstrap for SNGIST Group of Institutions.",
-        tags: [
-            {
-                name: "django",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "green-text-gradient",
-            },
-            {
-                name: "bootstrap",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: sngist,
-        source_code_link: "https://github.com/Jenin82/django-web",
-    },
-    {
-        name: "Portfolio Website",
-        description:
-            "A simple and mobile-friendly portfolio website created with Bootstrap, HTML and CSS, featuring scroll-triggered animations for an interactive user experience.",
-        tags: [
-            {
-                name: "bootstrap",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "css",
-                color: "green-text-gradient",
-            },
-            {
-                name: "animateOnScroll",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: portfolio,
-        source_code_link: "https://github.com/Jenin82/Jenin82.github.io/",
+        source_code_link: "https://github.com/ellurecodes",
+        live_demo_link: "#",
+        featured: false,
+        badge: "3D WebGL • Three.js",
+        status: "Live Portfolio",
     },
 ];
 

@@ -1,4 +1,4 @@
-import logo from "./Jlogo.png";
+import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -20,9 +20,17 @@ import python from "./tech/python.svg";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import c_lang from "./tech/c.svg";
+import firebase from "./tech/firebase.svg";
 
 import mulogo from "./company/µ.svg";
+import rvce_logo from "./company/rvce.svg";
+import syntrix_logo from "./company/syntrix.svg";
+import ncc_logo from "./company/ncc.svg";
+import google_logo from "./company/google.svg";
 
+import syntrix from "./syntrix-v2x.png";
+import lakshya from "./lakshya.png";
 import park from "./park.png";
 import space from "./space.png";
 import iedc from "./iedc.png";
@@ -59,18 +67,26 @@ export {
     tailwind,
     typescript,
     threejs,
+    c_lang,
+    firebase,
     mulogo,
+    rvce_logo,
+    syntrix_logo,
+    ncc_logo,
+    google_logo,
+    syntrix,
+    lakshya,
     park,
     space,
     iedc,
     threeportfolio,
     campus,
-	maze,
-	careerio,
-	eachpays,
-	chrome,
-	sngist,
-	todo,
-	iedcold,
+    maze,
+    careerio,
+    eachpays,
+    chrome,
+    sngist,
+    todo,
+    iedcold,
     portfolio,
 };

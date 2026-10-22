@@ -4,18 +4,18 @@ import {
     About,
     Contact,
     Experience,
-    // Feedbacks,
     Hero,
     Navbar,
     Tech,
     Works,
+    Footer,
     StarsCanvas,
 } from "./components";
 
 const App = () => {
     return (
         <BrowserRouter>
-            <div className="relative z-0 bg-primary">
+            <div className="relative z-0 bg-primary min-h-screen text-white selection:bg-[#00f090] selection:text-[#050816]">
                 <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
                     <Navbar />
                     <Hero />
@@ -24,11 +24,11 @@ const App = () => {
                 <Experience />
                 <Tech />
                 <Works />
-                {/* <Feedbacks /> */}
                 <div className="relative z-0">
                     <Contact />
                     <StarsCanvas />
                 </div>
+                <Footer />
             </div>
         </BrowserRouter>
     );

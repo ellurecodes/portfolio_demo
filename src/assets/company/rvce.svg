@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <circle cx="50" cy="50" r="45" stroke="#00f090" stroke-width="3" fill="#0d1527"/>
+  <circle cx="50" cy="50" r="38" stroke="#00d2ff" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.8"/>
+  <text x="50" y="44" font-family="Arial, sans-serif" font-weight="900" font-size="20" fill="#ffffff" text-anchor="middle" letter-spacing="2">RVCE</text>
+  <text x="50" y="62" font-family="Arial, sans-serif" font-weight="700" font-size="9" fill="#00f090" text-anchor="middle" letter-spacing="1">BENGALURU</text>
+  <text x="50" y="74" font-family="Arial, sans-serif" font-weight="500" font-size="8" fill="#94a3b8" text-anchor="middle">CSE • 2029</text>
+</svg>

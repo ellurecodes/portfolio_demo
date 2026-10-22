@@ -1,0 +1,14 @@
+Project 1 
+{
+Name : "V2X_emergency_vehicle_clearance_system"
+Description : "**Syntrix V2X** is a software-defined Vehicle-to-Everything (V2X) system designed to help emergency vehicles navigate congested roads. It uses real-time geolocation, Firebase-based synchronization, and Kalman + Particle filtering to provide V2V emergency alerts and V2I traffic-signal preemption without dedicated V2X hardware."
+Deployement : "https://v2v-v2i-project.web.app"
+Github : "https://github.com/ellurecodes/V2X_emergency_vehicle_clearance_system"
+}
+Project 2
+{
+Name : "Lakshya-2.0"
+Description : "**Lakshya 2.0** is a full-stack shooting event management platform for Air Rifle and Air Pistol competitions. Built with Firebase, Google Authentication, and Cloud Firestore, it manages participant registrations, event slot bookings, QR-based tickets and check-ins, live leaderboards, and admin operations with secure backend transactions."
+Deployement : "https://lakshya-02.web.app/"
+Github : "https://github.com/vaishnavrkadam/Lakshya-2.0"
+}

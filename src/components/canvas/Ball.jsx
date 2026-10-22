@@ -7,42 +7,36 @@ import {
     Preload,
     useTexture,
 } from "@react-three/drei";
+import CanvasErrorBoundary from "../CanvasErrorBoundary";
 
-import CanvasLoader from "../Loader";
-
-const Ball = (props) => {
-    const [decal] = useTexture([props.imgUrl]);
-
-    const meshRef = useRef(); // Reference to the mesh
+const Ball = ({ imgUrl }) => {
+    const [decal] = useTexture([imgUrl]);
+    const meshRef = useRef();
     let direction = 1;
-    // Animation loop for back-and-forth motion
+
     useFrame(() => {
         if (meshRef.current) {
-            // Change the rotation angle
-            meshRef.current.rotation.x += 0.01 * direction;
-            meshRef.current.rotation.y += 0.01 * direction;
+            meshRef.current.rotation.x += 0.008 * direction;
+            meshRef.current.rotation.y += 0.008 * direction;
 
-            // Reverse the direction if a certain angle is reached
-            if (
-                meshRef.current.rotation.x > 0.2 ||
-                meshRef.current.rotation.x < -0.2
-            ) {
+            if (meshRef.current.rotation.x > 0.25 || meshRef.current.rotation.x < -0.25) {
                 direction *= -1;
             }
         }
     });
 
     return (
-        <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
-            <ambientLight intensity={0.25} />
-            <directionalLight position={[0, 0, 0.05]} />
+        <Float speed={1.75} rotationIntensity={1} floatIntensity={1.5}>
+            <ambientLight intensity={0.35} />
+            <directionalLight position={[0, 0, 0.08]} />
             <mesh ref={meshRef} castShadow receiveShadow scale={2.75}>
                 <icosahedronGeometry args={[1, 1]} />
                 <meshStandardMaterial
-                    color="#fff8eb"
+                    color="#141c2e"
                     polygonOffset
                     polygonOffsetFactor={-5}
                     flatShading
+                    roughness={0.4}
                 />
                 <Decal
                     position={[0, 0, 1]}
@@ -56,20 +50,28 @@ const Ball = (props) => {
     );
 };
 
-const BallCanvas = ({ icon }) => {
-    return (
-        <Canvas
-            // frameloop="demand"
-            dpr={[1, 2]}
-            gl={{ preserveDrawingBuffer: true }}
-        >
-            <Suspense fallback={<CanvasLoader />}>
-                <OrbitControls enableZoom={false} />
-                <Ball imgUrl={icon} />
-            </Suspense>
+const BallCanvas = ({ icon, name }) => {
+    const fallbackUI = (
+        <div className="w-full h-full rounded-full bg-[#141c2e] border border-white/10 flex items-center justify-center p-4 shadow-lg hover:scale-105 transition-transform">
+            <img src={icon} alt={name || "Tech"} className="w-full h-full object-contain" />
+        </div>
+    );
 
-            <Preload all />
-        </Canvas>
+    return (
+        <CanvasErrorBoundary fallback={fallbackUI}>
+            <Canvas
+                frameloop="always"
+                dpr={[1, 1.5]}
+                gl={{ preserveDrawingBuffer: true, alpha: true, powerPreference: "low-power" }}
+                className="w-full h-full cursor-grab active:cursor-grabbing"
+            >
+                <Suspense fallback={null}>
+                    <OrbitControls enableZoom={false} />
+                    <Ball imgUrl={icon} />
+                </Suspense>
+                <Preload all />
+            </Canvas>
+        </CanvasErrorBoundary>
     );
 };
 
